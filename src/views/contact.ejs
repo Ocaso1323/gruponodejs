@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/head') %>
+        <title>
+            <%=title%>
+        </title>
+        <link rel="stylesheet" href="../public/main.cssf">
+</head>
+
+<body class="body-contact">
+    <%- include ('partials/navigation') %>
+        <main class="main-contact">
+            <div class="contact-hero-section">
+                <div class="contact-hero-effect">
+                    <h1>¡la vida te puede llevar mas alto que cualquier tipo de droga!</h1>
+                    <p>“Eres muy importante para,destruirte asi”</p>
+                    <span>¡llena Nuestro formulario y ponte en contacto,si deseas una mano amiga!</span>
+                </div>
+            </div>
+
+            <form action="post" class="contact-form">
+                <div class="form-left">
+                    <!-- aquí va todo el form -->
+                    <label for="name">
+                        Primer Nombre
+                    </label>
+                    <input type="text" name="Nombre" id="name" placeholder="">
+                    <label for="apellido">
+                        Primer Apellido
+                    </label>
+                    <input type="text" name="apellido" id="apellido" placeholder="">
+                    <label for="email">
+                        Email
+                    </label>
+                    <input type="email" name="Email" id="email" placeholder="">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="mensaje cols=" 200 rows="7"
+                        placeholder="Aquí puedes escribir tu mensaje, queja o petición">
+                    </textarea>`
+                    <button type="submit">Enviar</button>
+                </div>
+                           </form>
+        </main>
+        <a href="/" class="btn btn-primary w-25 container vh-500 d-flex justify-content-center align-items-center">Read More...</a> 
+    <%- include ('partials/footer') %> 
+</body>
+</html>
